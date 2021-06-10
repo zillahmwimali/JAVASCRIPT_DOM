@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+</head>
+<body>
+    <div class="Quiz">
+        <h1>QUIZ</h1>
+        
+    </div>
+            <div id="quiz">
+                <form><label for="name">Name</label><br>
+                    <input type="text" id="names" name="name" style="width: 280px;height: 30px;"><br>
+                    <label for="class">Class</label><br>
+                    <input type="text" id="class1" name="class" style="width: 280px;height: 30px;"><br>
+                    <label for="subject">Subject</label><br>
+                    <input type="text" id="subject1" name="loc" style="width: 280px;height: 30px;"><br>
+                    <label for="date">Date</label><br>
+                    <input type="date" id="in" name="date" style="width: 280px;height: 30px;"><br><br>
+                    <button type="submit" id="submit" style="background-color: rgb(172, 172, 185);width: 280px;height: 50px;">Get Results</button>
+                </form>
+            </div>
+    <script>
+                document.getElementById("submit").addEventListener("click", function() {
+                let student1 = document.getElementById("names").value;
+                let class1 = document.getElementById("class1").value;
+                let subject1 = document.getElementById("subject1").value;
+                let date = document.getElementById("in").value;
+                alert(`Name:${student1}. Class:${class1}. Subject:${subject1}. Date:${date}`);
+            });
+    </script>
+</body>
+</html>
